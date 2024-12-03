@@ -1,0 +1,11 @@
+:root {
+    --color-text: #F0F0F3;         /* Light text color for readability */
+    --color-primary: #5C6D7E;      /* Slightly more vibrant bluish-gray for a bit of pop */
+    --color-secondary: #40434B;    /* Deeper, cooler gray with a slight blue tone for contrast */
+    --color-dark: #1B1D22;         /* Deep dark tone, almost black with a hint of blue */
+    --color-bg: #121417;           /* Darker background with a cool undertone for modern contrast */
+    --color-accent: #6B8FAF;       /* A calming, desaturated blue to introduce subtle color */
+    --color-mid-dark: #2E3135;     /* Slightly lighter than dark, provides a nice mid-tone */
+    --font-robot: "Roboto";
+    --text-font-size: 1.3rem;
+}

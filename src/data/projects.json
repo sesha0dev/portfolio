@@ -1,0 +1,30 @@
+[
+
+    {
+        "title": "2024 Library Game",
+        "imageSrc": "/assets/projects/library.png",
+        "description": "A mobile web-based game designed with a futuristic theme to enhance navigation and orientation within libraries.",
+        "skills": ["HTML", "CSS", "JavaScript", "Character Development"],
+        "demo": "https://2024lib.screencraft.net.au/",
+        "source": ""
+    },
+    
+    {
+        "title": "Portfolio Website",
+        "imageSrc": "/assets/projects/portfolio.png",
+        "description": "My personal portfolio showcasing my work, created to improve my skills in React and UI/UX design.",
+        "skills": ["React", "CSS", "UI/UX Design"],
+        "demo": "https://sesha.dev/",
+        "source": ""
+    },
+    
+    {
+        "title": "Research and Implementation",
+        "imageSrc": "/assets/projects/research.png",
+        "description": "A website featuring voice navigation capabilities, developed as part of my research class project.",
+        "skills": ["JavaScript", "HTML", "CSS"],
+        "demo": "",
+        "source": "https://github.com/K-sesha/research_project"
+    }
+    
+]

@@ -1,0 +1,42 @@
+[
+    {
+        "title": "HTML",
+        "imageSrc": "/assets/skills/html-icon.png",
+        "color": "#f06529"
+    },
+    {
+        "title": "CSS",
+        "imageSrc": "/assets/skills/css-icon.png",
+        "color": "#2965f1"
+    },
+
+    {
+        "title": "SASS",
+        "imageSrc": "/assets/skills/sass-icon.png",
+        "color": "#cd6799"
+    },
+
+    {
+        "title": "JavaScript",
+        "imageSrc": "/assets/skills/javaScript-icon.png",
+        "color": "#FDDA0D"
+    },
+    {
+        "title": "React",
+        "imageSrc": "/assets/skills/react-icon.png",
+        "color": "#61dbfb"
+    },
+
+    {
+        "title": "Illustrator",
+        "imageSrc": "/assets/skills/design-icon.png",
+        "color": "#f8a829"
+    },
+
+    {
+        "title": "Wordpress",
+        "imageSrc": "/assets/skills/wordpress-icon.png",
+        "color": "#00749c"
+    }
+
+]

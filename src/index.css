@@ -1,0 +1,35 @@
+@import "@fontsource/outfit/index.css";
+@import "@fontsource/roboto/index.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1E1E21; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3A3C40; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+body {
+  -webkit-font-smoothing: antialiased; /* For smoother fonts on iOS */
+  -moz-osx-font-smoothing: grayscale; /* For consistent macOS rendering */
+}
+

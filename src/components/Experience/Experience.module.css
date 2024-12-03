@@ -1,0 +1,135 @@
+@import "../../vars.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  position: relative;
+  background-color: var(--color-dark);
+  border-radius: 15px;
+  padding: 5vw; 
+  margin-top: 10vh; 
+  z-index: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  color: var(--color-text);
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
+  font-weight: 700;
+  letter-spacing: 1.75px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5vh; 
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2vw; 
+  width: 100%;
+  max-width: 1000px; 
+  margin-bottom: 30px;
+}
+
+.skill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin-top: 2vh; 
+}
+
+.skill:hover {
+  transform: scale(1.05);
+}
+
+.skillTitle {
+  position: absolute;
+  top: -2.5rem;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: var(--color-text);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.skillImageContainer {
+  width: 80px;
+  height: 80px;
+  background-color: var(--color-text);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 5px;
+}
+
+.skillImageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.skill:hover .skillTitle {
+  opacity: 1;
+  background-color: var(--color-mid-dark);
+  padding: 0.5rem;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.skill:hover .skillImageContainer {
+  transform: translateY(-0.5rem);
+  background-color: var(--hoverColor);
+}
+
+@media screen and (max-width: 830px) {
+  
+  .container {
+    padding: 30px 10px;
+    margin-top: 20px;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    width: 70%;
+    gap: 4vw; /* Increased gap for better vertical spacing */
+  }
+
+  .skill {
+    margin-top: 3vh; /* Additional vertical margin for more spacing */
+  }
+
+  .skill .skillTitle {
+    opacity: 1;
+    top: -2rem; 
+    background-color: var(--color-mid-dark);
+    padding: 0.5rem;
+    border-radius: 5px;
+    z-index: 2;
+    margin: 0.5rem;
+  }
+
+  .skillImageContainer {
+    width: 70px;
+    height: 70px;
+  }
+}

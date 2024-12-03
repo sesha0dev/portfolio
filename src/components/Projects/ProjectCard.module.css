@@ -1,0 +1,157 @@
+@import "../../vars.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.projectCard {
+    position: relative;
+    width: clamp(300px, 90%, 500px); 
+    height: auto; 
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(180deg, var(--color-mid-dark) 0%, var(--color-dark) 100%);
+    margin: 2vw; 
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.projectCard:hover {
+    transform: translateY(-0.5rem);
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: clamp(150px, 20vw, 200px); 
+    object-fit: cover;
+    display: block;
+}
+
+.projectTitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    font-weight: 500;
+    color: var(--color-text);
+    text-align: center;
+    padding: 10px 0;
+    font-family: var(--font-robot);
+}
+
+.hiddenContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2vw;
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.projectCard:hover .hiddenContent {
+    opacity: 1;
+    visibility: visible;
+}
+
+.projectDescription {
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-robot);
+    line-height: 1.5;
+    padding: 0 5%;
+}
+
+.skillsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5vw; 
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.skillsGrid li {
+    background-color: var(--color-primary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 5px;
+    font-size: clamp(0.7rem, 1vw, 0.9rem);
+    color: var(--color-dark);
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap; /* Ensure better layout for smaller screens */
+    gap: 1.5rem; /* Increased gap for better spacing */
+    justify-content: center; /* Center the links for better alignment */
+}
+
+.links a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    padding: 0.75rem 1rem; /* Increased padding for larger tap area */
+    background-color: var(--color-secondary);
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block; /* Ensures consistent block-level clickable area */
+}
+
+.links a:hover {
+    background-color: var(--color-accent);
+}
+
+@media screen and (max-width: 830px) {
+    .projectCard {
+        width: 95%;
+        margin: 1rem auto;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .hiddenContent {
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        padding: 1rem;
+        background-color: transparent;
+    }
+
+    .image {
+        height: 150px;
+    }
+
+    .projectTitle {
+        font-size: 1.2rem;
+    }
+
+    .projectDescription {
+        font-size: 0.9rem;
+        padding: 0 3%;
+    }
+
+    .skillsGrid li {
+        font-size: 0.8rem;
+    }
+
+    .links {
+        gap: 1.5rem; /* More spacing between links on mobile */
+    }
+
+    .links a {
+        font-size: 1rem;
+        padding: 0.6rem 1rem; /* Larger tap area for mobile */
+    }
+}

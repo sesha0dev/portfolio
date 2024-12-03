@@ -1,0 +1,163 @@
+.container {
+    position: relative;
+    background-color: var(--color-dark);
+    border-radius: 15px;
+    padding: 5vw;
+    margin-top: 10vh;
+    z-index: 1;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    padding: 2rem 0;
+    background-color: var(--color-bg-secondary); 
+}
+
+form {
+    width: 100%;
+    width: 750px; 
+    background-color: var(--color-bg);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    color: var(--color-text);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-bottom: 1.5rem;
+}
+
+.inputBox {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--color-text-light); /* Use a lighter text color for labels */
+    margin-bottom: 0.5rem;
+}
+
+.field,
+.fieldMessage {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--color-text);
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.field:focus,
+.fieldMessage:focus {
+    border-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.fieldMessage {
+    height: 150px;
+    resize: none; /* Prevents resizing */
+}
+
+button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-text);
+    color: var(--color-dark);
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+  
+.popupContent {
+    background: var(--color-bg);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+  
+.popupContent p {
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+  
+.popupContent button {
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    color: var(--color-text);
+    border: 1px solid var(--color-text);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+  
+.popupContent button:hover {
+    background-color: var(--color-text);
+    color: var(--color-dark);
+}
+  
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    form {
+        width: auto; /* Allow it to scale naturally */
+        max-width: 95%; /* Ensure the form spans most of the screen on smaller devices */
+        padding: 1.5rem; /* Slightly reduce padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.6rem; /* Slightly smaller header size for better scaling */
+    }
+
+    .field,
+    .fieldMessage {
+        font-size: 0.9rem; /* Adjust font size for input fields */
+        padding: 0.7rem; /* Slightly smaller padding for a better fit */
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 0.7rem; /* Adjust button size to align with smaller form layout */
+    }
+}

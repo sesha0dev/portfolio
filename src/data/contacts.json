@@ -1,0 +1,18 @@
+[
+    {
+      "imageSrc": "assets/contact/email-icon.png",
+      "link": "mailto:kseniya.kronova@gmail.com",
+      "name": "Email"
+    },
+    {
+      "imageSrc": "assets/contact/linkedin-icon.png",
+      "link": "https://www.linkedin.com/in/kseniya-kronava-180279291/",
+      "name": "LinkedIn"
+    },
+    {
+      "imageSrc": "assets/contact/github-icon.png",
+      "link": "https://github.com/sesha0dev",
+      "name": "GitHub"
+    }
+]
+  
